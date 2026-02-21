@@ -1,0 +1,8 @@
+@import "./_styles/variables.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  color: $primary
+}
+
+@import "./_styles/components/card.scss";
