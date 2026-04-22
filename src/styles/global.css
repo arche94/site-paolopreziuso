@@ -4,16 +4,21 @@
   --ink: #141416;
   --ink-2: #2a2a2d;
   --ink-muted: #6b6b72;
-  --rule: rgba(20, 20, 22, .15);
+  --rule: rgba(20, 20, 22, 0.15);
   --accent: #d94a28;
-  --body: 'Inter', system-ui, sans-serif;
-  --mono: 'JetBrains Mono', ui-monospace, monospace;
-  --serif: 'IBM Plex Serif', 'Fraunces', Georgia, serif;
+  --body: "Inter", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+  --serif: "IBM Plex Serif", "Fraunces", Georgia, serif;
 }
 
-*, *::before, *::after { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background: var(--paper);
@@ -22,4 +27,6 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: inherit; }
+a {
+  color: inherit;
+}

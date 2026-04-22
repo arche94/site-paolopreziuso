@@ -1,5 +1,5 @@
 ---
-import site from '../data/site';
+import site from "../data/site";
 ---
 
 <header class="site-chrome">
@@ -17,14 +17,47 @@ import site from '../data/site';
 
 <style>
   .site-chrome {
-    position: sticky; top: 0; z-index: 50;
-    background: var(--paper); border-bottom: 1px solid var(--rule);
-    display: flex; align-items: center; gap: 20px; padding: 14px 32px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 14px 32px;
   }
-  .logo-mark { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
-  .logo-mark img { display: block; }
-  .logo-mark .name { font-family: var(--mono); font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500; }
-  .nav { display: flex; gap: 24px; margin-left: 28px; }
-  .nav a { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 1.8px; color: var(--ink-muted); text-decoration: none; }
-  .nav a:hover { color: var(--ink); }
+  .logo-mark {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .logo-mark img {
+    display: block;
+  }
+  .logo-mark .name {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .nav {
+    display: flex;
+    gap: 24px;
+    margin-left: 28px;
+  }
+  .nav a {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: var(--ink-muted);
+    text-decoration: none;
+  }
+  .nav a:hover {
+    color: var(--ink);
+  }
 </style>

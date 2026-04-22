@@ -22,13 +22,13 @@ Required repository secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `C
 
 ## Stack
 
-| Layer | Choice |
-|-------|--------|
-| Framework | Astro (static output) |
-| Styling | CSS with design tokens |
-| Hosting | Cloudflare Pages |
-| Testing | Playwright |
-| Fonts | Inter · JetBrains Mono · Instrument Serif |
+| Layer     | Choice                                    |
+| --------- | ----------------------------------------- |
+| Framework | Astro (static output)                     |
+| Styling   | CSS with design tokens                    |
+| Hosting   | Cloudflare Pages                          |
+| Testing   | Playwright                                |
+| Fonts     | Inter · JetBrains Mono · Instrument Serif |
 
 ## Content
 

@@ -1,6 +1,8 @@
 ---
-import { getCollection } from 'astro:content';
-const entries = (await getCollection('experience')).sort((a, b) => a.data.order - b.data.order);
+import { getCollection } from "astro:content";
+const entries = (await getCollection("experience")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
 ---
 
 <section id="experience">
@@ -8,27 +10,64 @@ const entries = (await getCollection('experience')).sort((a, b) => a.data.order 
     <span class="num">§ 02</span> Experience &amp; education
   </div>
   <div class="doc-tl">
-    {entries.map(entry => (
-      <>
-        <div class="yr">{entry.data.period}</div>
-        <div class={`ev${entry.data.current ? ' now' : ''}`}>
-          <b>{entry.data.title}</b> — {entry.data.company}
-        </div>
-      </>
-    ))}
+    {
+      entries.map((entry) => (
+        <>
+          <div class="yr">{entry.data.period}</div>
+          <div class={`ev${entry.data.current ? " now" : ""}`}>
+            <b>{entry.data.title}</b> — {entry.data.company}
+          </div>
+        </>
+      ))
+    }
   </div>
 </section>
 
 <style>
   .doc-section-label {
-    font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: var(--ink-muted);
-    padding: 64px 0 24px; display: flex; align-items: center; gap: 16px;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--ink-muted);
+    padding: 64px 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
   }
-  .doc-section-label::before { content: ''; width: 36px; height: 1.5px; background: var(--accent); }
-  .doc-section-label .num { color: var(--ink); margin-right: 6px; font-weight: 500; }
-  .doc-tl { display: grid; grid-template-columns: 120px 1fr; gap: 20px; font-family: var(--mono); font-size: 12px; }
-  .doc-tl .yr { color: var(--ink-muted); padding: 6px 0; border-top: 1px dashed var(--rule); }
-  .doc-tl .ev { padding: 6px 0; border-top: 1px dashed var(--rule); color: var(--ink-2); }
-  .doc-tl .ev b { color: var(--ink); font-weight: 500; }
-  .doc-tl .ev.now b { color: var(--accent); }
+  .doc-section-label::before {
+    content: "";
+    width: 36px;
+    height: 1.5px;
+    background: var(--accent);
+  }
+  .doc-section-label .num {
+    color: var(--ink);
+    margin-right: 6px;
+    font-weight: 500;
+  }
+  .doc-tl {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    font-family: var(--mono);
+    font-size: 12px;
+  }
+  .doc-tl .yr {
+    color: var(--ink-muted);
+    padding: 6px 0;
+    border-top: 1px dashed var(--rule);
+  }
+  .doc-tl .ev {
+    padding: 6px 0;
+    border-top: 1px dashed var(--rule);
+    color: var(--ink-2);
+  }
+  .doc-tl .ev b {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .doc-tl .ev.now b {
+    color: var(--accent);
+  }
 </style>

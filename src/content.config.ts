@@ -1,8 +1,8 @@
-import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
 const work = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/content/work' }),
+  loader: glob({ pattern: "**/*.yaml", base: "./src/content/work" }),
   schema: z.object({
     order: z.number(),
     title: z.string(),
@@ -15,7 +15,7 @@ const work = defineCollection({
 });
 
 const experience = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/content/experience' }),
+  loader: glob({ pattern: "**/*.yaml", base: "./src/content/experience" }),
   schema: z.object({
     order: z.number(),
     period: z.string(),

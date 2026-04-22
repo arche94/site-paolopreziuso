@@ -26,13 +26,13 @@
 
 ## Content edit map (full picture after Phase 2)
 
-| What to edit | File |
-|---|---|
-| Name, title, email, phone, lede, dateline, copyright | `src/data/site.json` |
-| Logo image | `public/logo.svg` (replace file) |
-| GitHub / LinkedIn URLs | `src/data/links.json` |
-| Work items | `src/content/work/*.yaml` |
-| Experience / education entries | `src/content/experience/*.yaml` |
+| What to edit                                         | File                             |
+| ---------------------------------------------------- | -------------------------------- |
+| Name, title, email, phone, lede, dateline, copyright | `src/data/site.json`             |
+| Logo image                                           | `public/logo.svg` (replace file) |
+| GitHub / LinkedIn URLs                               | `src/data/links.json`            |
+| Work items                                           | `src/content/work/*.yaml`        |
+| Experience / education entries                       | `src/content/experience/*.yaml`  |
 
 ## Next
 

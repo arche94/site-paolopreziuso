@@ -12,11 +12,11 @@ Phases: 0 of 3 complete
 
 ## Phases
 
-| Phase | Name | Plans | Status | Completed |
-|-------|------|-------|--------|-----------|
-| 1 | Astro scaffold & deploy pipeline | 2 | Complete | 2026-04-22 |
-| 2 | Component build & content layer | 5 | Complete | 2026-04-22 |
-| 3 | Polish, responsive QA & launch | TBD | Not started | - |
+| Phase | Name                             | Plans | Status      | Completed  |
+| ----- | -------------------------------- | ----- | ----------- | ---------- |
+| 1     | Astro scaffold & deploy pipeline | 2     | Complete    | 2026-04-22 |
+| 2     | Component build & content layer  | 5     | Complete    | 2026-04-22 |
+| 3     | Polish, responsive QA & launch   | TBD   | Not started | -          |
 
 ## Phase Details
 
@@ -27,12 +27,14 @@ Phases: 0 of 3 complete
 **Research:** Likely (Cloudflare Pages + Astro adapter configuration)
 
 **Scope:**
+
 - Scaffold Astro project
 - Configure Cloudflare Pages adapter
 - Set up CI/CD (GitHub Actions or Cloudflare git integration)
 - Custom domain wired up
 
 **Plans:**
+
 - [x] 01-01: Scaffold Astro, configure Cloudflare adapter, verify local build
 - [x] 01-02: Connect repo to Cloudflare Pages, verify deploy on push, wire domain
 
@@ -43,12 +45,14 @@ Phases: 0 of 3 complete
 **Research:** Unlikely (porting known HTML/CSS)
 
 **Scope:**
+
 - Port design tokens and global styles from prototype
 - Build Astro components: Nav, Hero, Work section, Experience timeline, Contact footer
 - Implement Astro content collections (or config YAML/JSON) for: work items, experience entries, contact links, stack list
 - Validate component output matches Document view prototype visually
 
 **Plans:**
+
 - [x] 02-01: Global styles, design tokens, font setup
 - [x] 02-02: Nav + Hero components
 - [x] 02-03: Work section component + content collection
@@ -63,15 +67,18 @@ Phases: 0 of 3 complete
 **Research:** Unlikely
 
 **Scope:**
+
 - Responsive QA across breakpoints (mobile, tablet, desktop)
 - Fix any layout regressions vs prototype
 - SEO basics (title, meta description, OG tags)
 - Final content review
 
 **Plans:**
+
 - [ ] 03-01: Responsive QA and fixes
 - [ ] 03-02: SEO basics + final content pass + launch sign-off
 
 ---
-*Roadmap created: 2026-04-22*
-*Last updated: 2026-04-22*
+
+_Roadmap created: 2026-04-22_
+_Last updated: 2026-04-22_

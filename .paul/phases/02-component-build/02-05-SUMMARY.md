@@ -28,6 +28,7 @@
 ## Phase 2 Complete
 
 All variable content is now editable without touching component code:
+
 - Work items → `src/content/work/*.yaml`
 - Experience entries → `src/content/experience/*.yaml`
 - Contact links → `src/data/links.json`
