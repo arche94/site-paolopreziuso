@@ -1,0 +1,26 @@
+{
+  "name": "Paolo Preziuso",
+  "pageTitle": "Paolo Preziuso — Software Engineer",
+  "logo": "/logo.svg",
+  "email": "preziusopao@gmail.com",
+  "copyright": "© Paolo Preziuso · 2026",
+  "hero": {
+    "dateline": [
+      "Shipping since 2018",
+      "B.S. Computer Science, Pisa · M.S. AI Engineering (in progress)"
+    ],
+    "lede": "Seven years writing backend, frontend, and platform code that has to actually run — MES and APS on factory floors, jacquard-fabric SaaS, VFX pipeline tools, and the devops seams that hold them together."
+  },
+  "contact": {
+    "stack": [
+      "Python · TypeScript",
+      "JavaScript · Java · PHP · C/C++",
+      "Node.js · React · Yii2 · Spring",
+      "MongoDB · MySQL · REST · GraphQL",
+      "Docker · GitHub Actions",
+      "Jupyter · Cursor · Codex"
+    ],
+    "languages": ["Italian — native", "English — fluent"],
+    "base": "Torino, Italy · CET"
+  }
+}
