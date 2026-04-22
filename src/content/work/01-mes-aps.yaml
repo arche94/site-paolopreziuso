@@ -1,0 +1,7 @@
+order: 1
+title: "Advanced MES + APS for manufacturing"
+period: "2025 — present"
+role: "Backend developer"
+company: "Industrial Cloud, Torino"
+body: "Extending a Node.js MES and building a Python APS system for production optimization across 3+ industries. Optimized MongoDB queries cut long-running operations by 50%; a GitFlow + CI/CD rework dropped time-to-production by 30%. Coordinated the team through the process change."
+stack: ["Node.js", "Python", "MongoDB", "CI/CD"]

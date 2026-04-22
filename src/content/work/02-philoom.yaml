@@ -1,0 +1,7 @@
+order: 2
+title: "Philoom — jacquard-fabric SaaS"
+period: "2023 — 2024"
+role: "Development consultant"
+company: "Phi Collective, Torino"
+body: "Built an investor demo in under 2 months, then designed and shipped the production architecture: 7 Python & Node.js microservices on AWS in 3 months, the React frontend for the Philoom platform, plus early R&D on ML / GenAI models for domain-specific problems."
+stack: ["Python", "Node.js", "React", "AWS", "ML"]

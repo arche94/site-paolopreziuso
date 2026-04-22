@@ -1,0 +1,7 @@
+order: 3
+title: "VFX pipeline tools"
+period: "2022 — 2023"
+role: "Junior pipeline developer"
+company: "Alps Studios, Torino"
+body: "Production-ready Python and VEX tools supporting VFX shows. Extended the existing pipeline software to monitor the render farm, and ran R&D on faster, more reliable production processes."
+stack: ["Python", "VEX", "Houdini"]
