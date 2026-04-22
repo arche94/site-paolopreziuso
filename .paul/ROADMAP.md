@@ -14,8 +14,8 @@ Phases: 0 of 3 complete
 
 | Phase | Name | Plans | Status | Completed |
 |-------|------|-------|--------|-----------|
-| 1 | Astro scaffold & deploy pipeline | 2 | Planning | - |
-| 2 | Component build & content layer | TBD | Not started | - |
+| 1 | Astro scaffold & deploy pipeline | 2 | Complete | 2026-04-22 |
+| 2 | Component build & content layer | 5 | Complete | 2026-04-22 |
 | 3 | Polish, responsive QA & launch | TBD | Not started | - |
 
 ## Phase Details
@@ -34,7 +34,7 @@ Phases: 0 of 3 complete
 
 **Plans:**
 - [x] 01-01: Scaffold Astro, configure Cloudflare adapter, verify local build
-- [ ] 01-02: Connect repo to Cloudflare Pages, verify deploy on push, wire domain
+- [x] 01-02: Connect repo to Cloudflare Pages, verify deploy on push, wire domain
 
 ### Phase 2: Component build & content layer
 
@@ -49,11 +49,12 @@ Phases: 0 of 3 complete
 - Validate component output matches Document view prototype visually
 
 **Plans:**
-- [ ] 02-01: Global styles, design tokens, font setup
-- [ ] 02-02: Nav + Hero components
-- [ ] 02-03: Work section component + content collection
-- [ ] 02-04: Experience timeline + Contact footer components
-- [ ] 02-05: Wire all content collections, smoke-test content edits
+- [x] 02-01: Global styles, design tokens, font setup
+- [x] 02-02: Nav + Hero components
+- [x] 02-03: Work section component + content collection
+- [x] 02-04: Experience timeline + Contact footer components
+- [x] 02-05: Wire all content collections, smoke-test content edits
+- [x] 02-06: Wire all text content (name, lede, dateline, stack, etc.) to site.json
 
 ### Phase 3: Polish, responsive QA & launch
 
