@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+const items = (await getCollection('work')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<section id="work">
+  <div class="doc-section-label">
+    <span class="num">§ 01</span> Selected work · 2018 — 2026
+  </div>
+  {items.map((item, i) => (
+    <article class="doc-case">
+      <div class="idx">N°&nbsp;{String(i + 1).padStart(2, '0')}</div>
+      <div>
+        <h3>{item.data.title}</h3>
+        <div class="meta">{item.data.period} · {item.data.role} · {item.data.company}</div>
+        <div class="body">{item.data.body}</div>
+      </div>
+      <div class="stack">
+        {item.data.stack.map(tag => <span class="chip">{tag}</span>)}
+      </div>
+    </article>
+  ))}
+</section>
+
+<style>
+  .doc-section-label {
+    font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: var(--ink-muted);
+    padding: 64px 0 24px; display: flex; align-items: center; gap: 16px;
+  }
+  .doc-section-label::before { content: ''; width: 36px; height: 1.5px; background: var(--accent); }
+  .doc-section-label .num { color: var(--ink); margin-right: 6px; font-weight: 500; }
+  .doc-case {
+    display: grid; grid-template-columns: 72px 1fr 260px; gap: 36px;
+    padding: 32px 0; border-bottom: 1px solid var(--rule); align-items: start;
+  }
+  .doc-case:last-child { border-bottom: none; }
+  .doc-case .idx { font-family: var(--mono); font-size: 12px; color: var(--ink-muted); letter-spacing: 1px; padding-top: 6px; }
+  .doc-case h3 { font-family: var(--serif); font-size: 30px; font-weight: 500; margin: 0 0 8px; line-height: 1.1; letter-spacing: -.5px; }
+  .doc-case .meta { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 1.8px; color: var(--ink-muted); margin-bottom: 12px; }
+  .doc-case .body { font-family: var(--serif); font-size: 15.5px; line-height: 1.6; color: var(--ink-2); }
+  .doc-case .stack { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; padding-top: 6px; }
+  .doc-case .chip { font-family: var(--mono); font-size: 10px; border: 1px solid var(--rule); padding: 3px 8px; letter-spacing: .5px; color: var(--ink-2); }
+</style>

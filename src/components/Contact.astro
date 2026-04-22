@@ -1,0 +1,106 @@
+---
+import site from "../data/site";
+import links from "../data/links.json";
+---
+
+<section id="contact">
+  <div class="doc-foot">
+    <div>
+      <h4>Stack</h4>
+      <div class="block">
+        {
+          site.contact.stack.map((line, i) => (
+            <>
+              {line}
+              {i < site.contact.stack.length - 1 && <br />}
+            </>
+          ))
+        }
+      </div>
+    </div>
+    <div>
+      <h4>Languages</h4>
+      <div class="block">
+        {
+          site.contact.languages.map((line, i) => (
+            <>
+              {line}
+              {i < site.contact.languages.length - 1 && <br />}
+            </>
+          ))
+        }
+      </div>
+      <h4 class="mt">Base</h4>
+      <div class="block">{site.contact.base}</div>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <div class="block">
+        <a href={`mailto:${site.email}`}>{site.email}</a><br />
+        {
+          site.phone && (
+            <>
+              {site.phone}
+              <br />
+            </>
+          )
+        }
+        <a href={links.github}>github</a> · <a href={links.linkedin}>linkedin</a
+        >
+      </div>
+      <div class="sig">
+        <img src={site.logo} alt="PP" width="20" height="20" />
+        <span>{site.copyright}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .doc-foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 48px;
+    padding: 64px 0 0;
+    margin-top: 32px;
+    border-top: 1.5px solid var(--ink);
+  }
+  h4 {
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    color: var(--ink-muted);
+    margin: 0 0 14px;
+    font-weight: 500;
+  }
+  h4.mt {
+    margin-top: 28px;
+  }
+  .block {
+    font-family: var(--mono);
+    font-size: 12px;
+    line-height: 1.9;
+    color: var(--ink-2);
+  }
+  .block a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+  }
+  .sig {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+    color: var(--ink-muted);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .sig img {
+    display: block;
+    opacity: 0.5;
+  }
+</style>

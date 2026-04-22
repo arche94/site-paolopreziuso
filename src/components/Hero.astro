@@ -1,0 +1,88 @@
+---
+import site from "../data/site";
+---
+
+<section class="doc-hero" id="index">
+  <div class="mark-big" aria-hidden="true">
+    <img src={site.logo} alt="" width="360" height="360" />
+  </div>
+  <div class="doc-dateline">
+    <span class="marker"></span>
+    {site.hero.dateline.map((item) => <span>{item}</span>)}
+  </div>
+  <h1>{site.name}</h1>
+  <p class="lede">{site.hero.lede}</p>
+  <div class="byline">
+    <span>{site.name}</span>
+    <a href={`mailto:${site.email}`}>{site.email}</a>
+    {site.phone && <span>{site.phone}</span>}
+  </div>
+</section>
+
+<style>
+  .doc-hero {
+    padding: 96px 0 72px;
+    border-bottom: 1px solid var(--ink);
+    position: relative;
+  }
+  .mark-big {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    opacity: 0.08;
+    pointer-events: none;
+  }
+  .doc-dateline {
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    color: var(--ink-muted);
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  .doc-dateline .marker {
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: 88px;
+    line-height: 0.96;
+    font-weight: 500;
+    letter-spacing: -2.4px;
+    margin: 0 0 32px;
+    max-width: 14ch;
+  }
+  .lede {
+    font-family: var(--serif);
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: 620px;
+    color: var(--ink-2);
+    margin: 0 0 40px;
+  }
+  .byline {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--ink-muted);
+    border-top: 1px solid var(--rule);
+    padding-top: 14px;
+    max-width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .byline a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .byline a:hover {
+    border-bottom-color: var(--accent);
+  }
+</style>
