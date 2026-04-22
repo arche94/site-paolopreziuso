@@ -1,9 +1,23 @@
 ---
 import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import Work from '../components/Work.astro';
+import Experience from '../components/Experience.astro';
+import Contact from '../components/Contact.astro';
+import site from '../data/site';
 ---
 
-<Base title="Paolo Preziuso">
-  <main>
-    <p>Paolo Preziuso — coming soon</p>
+<Base title={site.pageTitle}>
+  <Nav />
+  <main class="doc">
+    <Hero />
+    <Work />
+    <Experience />
+    <Contact />
   </main>
 </Base>
+
+<style>
+  .doc { max-width: 1200px; margin: 0 auto; padding: 0 48px 120px; }
+</style>
