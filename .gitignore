@@ -10,3 +10,4 @@ playwright-report/
 # Design prototype — reference only, not part of the build
 PP Personal website/
 .claude/*.local.json
+.carl/sessions/
