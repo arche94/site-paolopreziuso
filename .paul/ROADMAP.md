@@ -16,7 +16,7 @@ Phases: 0 of 3 complete
 | ----- | -------------------------------- | ----- | ----------- | ---------- |
 | 1     | Astro scaffold & deploy pipeline | 2     | Complete    | 2026-04-22 |
 | 2     | Component build & content layer  | 5     | Complete    | 2026-04-22 |
-| 3     | Polish, responsive QA & launch   | TBD   | Not started | -          |
+| 3     | Polish, responsive QA & launch   | TBD   | Planning    | -          |
 
 ## Phase Details
 
@@ -75,8 +75,10 @@ Phases: 0 of 3 complete
 
 **Plans:**
 
-- [ ] 03-01: Responsive QA and fixes
-- [ ] 03-02: SEO basics + final content pass + launch sign-off
+- [x] 03-01: Tailwind CSS setup + design token config
+- [x] 03-02: Nav + Hero + page wrapper responsive rewrite (hamburger, fluid headline)
+- [x] 03-03: Work + Experience + Contact responsive rewrite (grid collapse, 4K)
+- [ ] 03-04: SEO basics + final content pass + launch sign-off
 
 ---
 
