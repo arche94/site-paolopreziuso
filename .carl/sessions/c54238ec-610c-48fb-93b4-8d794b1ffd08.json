@@ -1,0 +1,17 @@
+{
+  "uuid": "c54238ec-610c-48fb-93b4-8d794b1ffd08",
+  "started": "2026-04-23T08:43:10.101196",
+  "cwd": "Z:\\_repos\\site-paolopreziuso\\site-paolopreziuso",
+  "label": "site-paolopreziuso",
+  "title": null,
+  "prompt_count": 2,
+  "last_activity": "2026-04-23T08:43:56.243541",
+  "overrides": {
+    "DEVMODE": null,
+    "GLOBAL_STATE": null,
+    "DEVELOPMENT_STATE": null,
+    "CONTENT_STATE": null,
+    "TESTING_STATE": null
+  },
+  "last_context_signature": "b:FRESH|d:False|a:GLOBAL|m:|c:"
+}
