@@ -1,3 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #eceef1;
+  --color-paper-2: #e1e4e8;
+  --color-ink: #141416;
+  --color-ink-2: #2a2a2d;
+  --color-ink-muted: #6b6b72;
+  --color-accent: #d94a28;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-serif: "IBM Plex Serif", "Fraunces", Georgia, serif;
+  --breakpoint-3xl: 1920px;
+  --breakpoint-2k: 2160px;
+}
+
 :root {
   --paper: #eceef1;
   --paper-2: #e1e4e8;

@@ -10,18 +10,12 @@ import site from "../data/site";
 
 <Base title={site.pageTitle}>
   <Nav />
-  <main class="doc">
+  <main class="max-w-[1200px] 3xl:max-w-[1440px] 2k:max-w-[2160px] mx-auto px-4 sm:px-6 md:px-12 pb-24 md:pb-[120px]">
     <Hero />
-    <Work />
-    <Experience />
+    <div class="2k:grid 2k:grid-cols-[2fr_1fr] 2k:gap-16 2k:items-start">
+      <Work />
+      <Experience />
+    </div>
     <Contact />
   </main>
 </Base>
-
-<style>
-  .doc {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 48px 120px;
-  }
-</style>

@@ -11,7 +11,7 @@ const items = (await getCollection("work")).sort(
   </div>
   {
     items.map((item, i) => (
-      <article class="doc-case">
+      <article class="doc-case grid gap-3 md:grid-cols-[72px_1fr_260px] md:gap-9">
         <div class="idx">N°&nbsp;{String(i + 1).padStart(2, "0")}</div>
         <div>
           <h3>{item.data.title}</h3>
@@ -20,7 +20,7 @@ const items = (await getCollection("work")).sort(
           </div>
           <div class="body">{item.data.body}</div>
         </div>
-        <div class="stack">
+        <div class="stack justify-start md:justify-end">
           {item.data.stack.map((tag) => (
             <span class="chip">{tag}</span>
           ))}
@@ -54,9 +54,6 @@ const items = (await getCollection("work")).sort(
     font-weight: 500;
   }
   .doc-case {
-    display: grid;
-    grid-template-columns: 72px 1fr 260px;
-    gap: 36px;
     padding: 32px 0;
     border-bottom: 1px solid var(--rule);
     align-items: start;
@@ -73,7 +70,7 @@ const items = (await getCollection("work")).sort(
   }
   .doc-case h3 {
     font-family: var(--serif);
-    font-size: 30px;
+    font-size: clamp(22px, 2.5vw, 30px);
     font-weight: 500;
     margin: 0 0 8px;
     line-height: 1.1;
@@ -97,7 +94,6 @@ const items = (await getCollection("work")).sort(
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    justify-content: flex-end;
     padding-top: 6px;
   }
   .doc-case .chip {
@@ -107,5 +103,13 @@ const items = (await getCollection("work")).sort(
     padding: 3px 8px;
     letter-spacing: 0.5px;
     color: var(--ink-2);
+  }
+  @media (max-width: 767px) {
+    .doc-section-label {
+      padding-top: 40px;
+    }
+    .doc-section-label::before {
+      width: 12px;
+    }
   }
 </style>

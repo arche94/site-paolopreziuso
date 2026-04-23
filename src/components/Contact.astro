@@ -4,7 +4,7 @@ import links from "../data/links.json";
 ---
 
 <section id="contact">
-  <div class="doc-foot">
+  <div class="doc-foot grid gap-8 md:gap-12 sm:grid-cols-2 md:grid-cols-3">
     <div>
       <h4>Stack</h4>
       <div class="block">
@@ -58,9 +58,6 @@ import links from "../data/links.json";
 
 <style>
   .doc-foot {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 48px;
     padding: 64px 0 0;
     margin-top: 32px;
     border-top: 1.5px solid var(--ink);
@@ -102,5 +99,10 @@ import links from "../data/links.json";
   .sig img {
     display: block;
     opacity: 0.5;
+  }
+  @media (max-width: 767px) {
+    .doc-foot {
+      padding: 40px 0 0;
+    }
   }
 </style>
