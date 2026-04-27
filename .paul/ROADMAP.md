@@ -78,7 +78,7 @@ Phases: 0 of 3 complete
 - [x] 03-01: Tailwind CSS setup + design token config
 - [x] 03-02: Nav + Hero + page wrapper responsive rewrite (hamburger, fluid headline)
 - [x] 03-03: Work + Experience + Contact responsive rewrite (grid collapse, 4K)
-- [ ] 03-04: SEO basics + final content pass + launch sign-off
+- [ ] 03-04: SEO basics + final content pass + launch sign-off (Planning)
 
 ---
 
