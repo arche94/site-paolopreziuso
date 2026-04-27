@@ -7,16 +7,16 @@ Migrate the existing HTML/CSS portfolio prototype to a production Astro site dep
 ## Current Milestone
 
 **v0.1 Initial Release** (v0.1.0)
-Status: In progress
-Phases: 0 of 3 complete
+Status: Complete
+Phases: 3 of 3 complete
 
 ## Phases
 
-| Phase | Name                             | Plans | Status      | Completed  |
-| ----- | -------------------------------- | ----- | ----------- | ---------- |
-| 1     | Astro scaffold & deploy pipeline | 2     | Complete    | 2026-04-22 |
-| 2     | Component build & content layer  | 5     | Complete    | 2026-04-22 |
-| 3     | Polish, responsive QA & launch   | TBD   | Planning    | -          |
+| Phase | Name                             | Plans | Status   | Completed  |
+| ----- | -------------------------------- | ----- | -------- | ---------- |
+| 1     | Astro scaffold & deploy pipeline | 2     | Complete | 2026-04-22 |
+| 2     | Component build & content layer  | 6     | Complete | 2026-04-22 |
+| 3     | Polish, responsive QA & launch   | 4     | Complete | 2026-04-28 |
 
 ## Phase Details
 
@@ -78,9 +78,9 @@ Phases: 0 of 3 complete
 - [x] 03-01: Tailwind CSS setup + design token config
 - [x] 03-02: Nav + Hero + page wrapper responsive rewrite (hamburger, fluid headline)
 - [x] 03-03: Work + Experience + Contact responsive rewrite (grid collapse, 4K)
-- [ ] 03-04: SEO basics + final content pass + launch sign-off (Planning)
+- [x] 03-04: SEO basics + final content pass + launch sign-off
 
 ---
 
 _Roadmap created: 2026-04-22_
-_Last updated: 2026-04-22_
+_Last updated: 2026-04-28 — v0.1.0 complete_
