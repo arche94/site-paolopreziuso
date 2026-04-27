@@ -1,6 +1,8 @@
 {
   "name": "Paolo Preziuso",
   "pageTitle": "Paolo Preziuso — Software Engineer",
+  "description": "Full-stack software engineer with 7 years shipping backend, frontend, and platform code — factory-floor MES, SaaS, VFX pipelines, and devops.",
+  "siteUrl": "https://paolopreziuso.com",
   "logo": "/logo.svg",
   "email": "preziusopao@gmail.com",
   "copyright": "© Paolo Preziuso · 2026",
@@ -9,16 +11,15 @@
       "Shipping since 2018",
       "B.S. Computer Science · M.S. AI Engineering (in progress)"
     ],
-    "lede": "Seven years writing backend, frontend, and platform code that has to actually run — MES and APS on factory floors, jacquard-fabric SaaS, VFX pipeline tools, and the devops seams that hold them together."
+    "lede": "Seven years shipping backend, frontend, and platform code in real production: MES and APS on factory floors, jacquard-fabric SaaS, VFX pipeline tools,  plus the devops that keeps them running."
   },
   "contact": {
     "stack": [
-      "Python · TypeScript",
-      "JavaScript · Java · PHP · C/C++",
+      "Python · TS · JS · Java · PHP · C/C++",
       "Node.js · React · Yii2 · Spring",
       "MongoDB · MySQL · REST · GraphQL",
-      "Docker · GitHub Actions",
-      "Jupyter · Cursor · Codex"
+      "Docker · Kubernetes · GitHub Actions",
+      "Jupyter · Cursor · Claude"
     ],
     "languages": ["Italian — native", "English — fluent"],
     "base": "Torino, Italy · CET"
